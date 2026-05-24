@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Adarsh Vidya Mandir, Kelve — A premier primary school in Palghar, Maharashtra. Nurturing young minds since 1963 with holistic education, cultural activities, and smart learning." />
+  <title>Adarsh Vidya Mandir — Kelve, Palghar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img src="logo.jpg" alt="Logo" class="loader-logo" />
+      <div class="loader-text">आदर्श विद्या मंदिर</div>
+      <div class="loader-bar"><div class="loader-progress" id="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" id="nav-brand-link">
+        <div class="nav-logo-wrap">
+          <img src="logo.jpg" alt="Adarsh Vidya Mandir Logo" class="nav-logo" />
+          <div class="nav-logo-ring"></div>
+        </div>
+        <div class="nav-title-group">
+          <span class="nav-title-hi">आदर्श विद्या मंदिर</span>
+          <span class="nav-title-en">Kelve, Palghar · Est. 1963</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home"     class="nav-link active" id="nav-home">Home</a>
+        <a href="#about"    class="nav-link" id="nav-about">About</a>
+        <a href="#features" class="nav-link" id="nav-features">Why Us</a>
+        <a href="#gallery"  class="nav-link" id="nav-gallery">Gallery</a>
+        <a href="#timeline" class="nav-link" id="nav-timeline">Journey</a>
+        <a href="#contact"  class="nav-link" id="nav-contact">Contact</a>
+        <a href="#contact"  class="nav-cta" id="nav-cta-btn">Enroll Now ✦</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <!-- Particle canvas -->
+    <canvas class="hero-canvas" id="hero-canvas"></canvas>
+
+    <!-- Slideshow backgrounds -->
+    <div class="hero-slides" id="hero-slides">
+      <div class="hero-slide active" style="background-image: url('20241207_102032.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('20230907_130243.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('20231227_175020.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('IMG-20260222-WA0043.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Content -->
+    <div class="hero-content-wrap">
+      <div class="hero-content">
+        <div class="hero-badge-row">
+          <span class="hero-badge">🏫 Est. 1963</span>
+          <span class="hero-badge">📍 Kelve, Palghar</span>
+          <span class="hero-badge">🏆 Award-Winning School</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="hero-title-hi">आदर्श विद्या मंदिर</span>
+          <span class="hero-title-en">Where Every Child <span class="gradient-word">Shines</span></span>
+        </h1>
+        <div class="hero-motto">
+          <span class="motto-line"></span>
+          <p>✨ तमसो मा ज्योतिर्गमय — Lead us from Darkness to Light ✨</p>
+          <span class="motto-line"></span>
+        </div>
+        <p class="hero-sub">Nurturing curious minds, joyful hearts, and bright futures since 1963 under the Nutan Vidya Vikas Mandal.</p>
+        <div class="hero-actions">
+          <a href="#gallery" class="btn btn-hero-primary" id="hero-gallery-btn">
+            <span>Explore Our World</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#about" class="btn btn-hero-ghost" id="hero-about-btn">Learn More</a>
+        </div>
+      </div>
+      <!-- Stats floating -->
+      <div class="hero-stats-panel">
+        <div class="stat-item">
+          <span class="stat-num" data-target="63">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years of Excellence</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="500">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Happy Students</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="25">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Expert Teachers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Pass Rate</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide dots -->
+    <div class="hero-dots" id="hero-dots">
+      <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+      <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ===== WAVE DIVIDER ===== -->
+  <div class="wave-divider wave-top">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/>
+    </svg>
+  </div>
+
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>🎓 Quality Education</span><span>🏆 Award-Winning School</span><span>🎭 Cultural Excellence</span><span>📚 Smart Classrooms</span><span>🌱 Holistic Growth</span><span>🎨 Arts &amp; Crafts</span><span>⭐ Est. 1963</span><span>🤝 Community Values</span>
+      <span>🎓 Quality Education</span><span>🏆 Award-Winning School</span><span>🎭 Cultural Excellence</span><span>📚 Smart Classrooms</span><span>🌱 Holistic Growth</span><span>🎨 Arts &amp; Crafts</span><span>⭐ Est. 1963</span><span>🤝 Community Values</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header animate-up">
+        <div class="section-eyebrow">Our Story</div>
+        <h2 class="section-title">More Than a School —<br/><em>A Second Home</em></h2>
+        <div class="title-underline"></div>
+        <p class="section-desc">For over six decades, Adarsh Vidya Mandir has been lighting up young lives in Kelve with the gift of knowledge, values, and joy.</p>
+      </div>
+
+      <div class="about-layout">
+        <!-- Image mosaic -->
+        <div class="about-mosaic animate-left">
+          <div class="mosaic-main">
+            <img src="20240207_125226.jpg" alt="School campus" />
+            <div class="mosaic-badge mosaic-badge-1">
+              <span class="mb-num">1963</span>
+              <span class="mb-text">Founded</span>
+            </div>
+          </div>
+          <div class="mosaic-secondary">
+            <div class="mosaic-sm">
+              <img src="20250326_084912.jpg" alt="Smart classroom learning" />
+            </div>
+            <div class="mosaic-sm mosaic-accent">
+              <div class="mosaic-quote">
+                <span class="quote-mark">"</span>
+                <p>Every child is a star waiting to shine</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text content -->
+        <div class="about-content animate-right">
+          <div class="about-pill">नूतन विद्या विकास मंडळ</div>
+          <h3 class="about-heading">Building Tomorrow's Leaders Since 1963</h3>
+          <p class="about-text">Established under the <strong>Nutan Vidya Vikas Mandal</strong>, our school stands as a beacon of learning in Kelve. We believe that education is not just about textbooks — it's about building character, confidence, and creativity.</p>
+
+          <div class="about-features-list">
+            <div class="afl-item">
+              <div class="afl-icon" style="--icon-clr: #e63946">📱</div>
+              <div>
+                <strong>Smart Digital Classrooms</strong>
+                <p>Interactive smartboards transform every lesson into an engaging adventure</p>
+              </div>
+            </div>
+            <div class="afl-item">
+              <div class="afl-icon" style="--icon-clr: #06d6a0">🌍</div>
+              <div>
+                <strong>Holistic Development</strong>
+                <p>Academics + Arts + Sports + Values = A complete, well-rounded child</p>
+              </div>
+            </div>
+            <div class="afl-item">
+              <div class="afl-icon" style="--icon-clr: #f4a300">🏆</div>
+              <div>
+                <strong>Award-Winning Students</strong>
+                <p>Our students win accolades at district &amp; state-level competitions</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#gallery" class="btn btn-primary about-cta">See Our Students in Action →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WAVE DIVIDER ===== -->
+  <div class="wave-divider" style="transform: rotate(180deg)">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,0 1080,80 1440,40 L1440,80 L0,80 Z" fill="#0f0e17"/>
+    </svg>
+  </div>
+
+  <!-- ===== FEATURES SECTION ===== -->
+  <section class="features section" id="features">
+    <div class="features-bg-glow"></div>
+    <div class="container">
+      <div class="section-header animate-up">
+        <div class="section-eyebrow" style="color: #ffd166; border-color: rgba(255,209,102,0.3)">Why Choose Us</div>
+        <h2 class="section-title" style="color: #fff">What Makes Us <em style="color: #ffd166">Truly Special</em></h2>
+        <div class="title-underline" style="background: linear-gradient(90deg, #e63946, #f4a300)"></div>
+        <p class="section-desc" style="color: rgba(255,255,255,0.65)">More than academics — a nurturing home where children grow, laugh, explore, and discover their best selves.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card fc-1" id="feature-smartboard">
+          <div class="fc-glow"></div>
+          <div class="fc-icon">📱</div>
+          <h3>Smart Classrooms</h3>
+          <p>Interactive smartboards and digital learning tools make every lesson a thrilling discovery.</p>
+          <div class="fc-line"></div>
+        </div>
+        <div class="feature-card fc-2" id="feature-culture">
+          <div class="fc-glow"></div>
+          <div class="fc-icon">🎭</div>
+          <h3>Cultural Excellence</h3>
+          <p>Annual festivals, dance performances, and celebrations that celebrate our vibrant heritage.</p>
+          <div class="fc-line"></div>
+        </div>
+        <div class="feature-card fc-3" id="feature-arts">
+          <div class="fc-glow"></div>
+          <div class="fc-icon">🎨</div>
+          <h3>Arts &amp; Creativity</h3>
+          <p>Hands-on art and craft sessions that build imagination, fine motor skills, and artistic joy.</p>
+          <div class="fc-line"></div>
+        </div>
+        <div class="feature-card fc-4" id="feature-sports">
+          <div class="fc-glow"></div>
+          <div class="fc-icon">🏆</div>
+          <h3>Sports &amp; Competitions</h3>
+          <p>We participate and excel in inter-school sports and academic olympiads across Palghar district.</p>
+          <div class="fc-line"></div>
+        </div>
+        <div class="feature-card fc-5" id="feature-parents">
+          <div class="fc-glow"></div>
+          <div class="fc-icon">👨‍👩‍👧</div>
+          <h3>Parent Partnership</h3>
+          <p>Regular meetings and community events keep families deeply connected to their child's journey.</p>
+          <div class="fc-line"></div>
+        </div>
+        <div class="feature-card fc-6" id="feature-library">
+          <div class="fc-glow"></div>
+          <div class="fc-icon">📚</div>
+          <h3>Reading Culture</h3>
+          <p>Partnership with Bharat Vachnalaya, Kelve to cultivate a lifelong love for reading and literature.</p>
+          <div class="fc-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WAVE DIVIDER ===== -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fdf8f2"/>
+    </svg>
+  </div>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section class="gallery-section section" id="gallery">
+    <div class="container">
+      <div class="section-header animate-up">
+        <div class="section-eyebrow">Memories</div>
+        <h2 class="section-title">Our School Life in <em>Pictures</em></h2>
+        <div class="title-underline"></div>
+        <p class="section-desc">A window into the joy, learning, and celebration that defines life at Adarsh Vidya Mandir.</p>
+      </div>
+
+      <div class="gallery-tabs" id="gallery-tabs">
+        <button class="tab-btn active" data-filter="all" id="tab-all">✦ All</button>
+        <button class="tab-btn" data-filter="events" id="tab-events">🎉 Events</button>
+        <button class="tab-btn" data-filter="learning" id="tab-learning">📚 Learning</button>
+        <button class="tab-btn" data-filter="culture" id="tab-culture">🎭 Culture</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item gi-tall" data-category="events" id="gitem-1">
+          <img src="IMG-20260222-WA0043.jpg" alt="Students receiving trophy at competition" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">🏆 Achievement</span>
+              <p class="go-title">Inter-School Trophy</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="culture" id="gitem-2">
+          <img src="20230907_130243.jpg" alt="Girls in traditional dress for cultural festival" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">🎀 Culture</span>
+              <p class="go-title">Cultural Festival</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="culture" id="gitem-3">
+          <img src="20231227_175020.jpg" alt="Boys performing dance at annual function" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">💃 Performance</span>
+              <p class="go-title">Annual Function Dance</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item gi-wide" data-category="events" id="gitem-13">
+          <img src="20241207_102032.jpg" alt="Full school assembly under the trees" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">🏫 Community</span>
+              <p class="go-title">School Assembly</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="learning" id="gitem-4">
+          <img src="20250215_112548.jpg" alt="Students showing handmade greeting cards" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">🎨 Creativity</span>
+              <p class="go-title">Creative Arts</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="learning" id="gitem-5">
+          <img src="20250326_084912.jpg" alt="Teacher teaching with smartboard" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">📺 Innovation</span>
+              <p class="go-title">Smart Learning</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item gi-tall" data-category="events" id="gitem-14">
+          <img src="20260317_155812.jpg" alt="Student receiving award at annual prize distribution" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">🎖️ Honour</span>
+              <p class="go-title">Prize Distribution</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="events" id="gitem-6">
+          <img src="20240903_151917.jpg" alt="Students with library books at Bharat Vachnalaya" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">📚 Reading</span>
+              <p class="go-title">Reading Programme</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item gi-wide" data-category="events" id="gitem-7">
+          <img src="20230623_161204.jpg" alt="Parent meeting at school" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">👨‍👩‍👧 Community</span>
+              <p class="go-title">Parent Meeting</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="events" id="gitem-8">
+          <img src="20250401_121704.jpg" alt="Community gathering at school" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">🤝 Together</span>
+              <p class="go-title">Community Event</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="events" id="gitem-9">
+          <img src="20251223_145856.jpg" alt="Art and craft exhibition" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">🎪 Showcase</span>
+              <p class="go-title">Art Exhibition</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="learning" id="gitem-10">
+          <img src="20231227_175330.jpg" alt="School activities and learning" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">🌟 Activities</span>
+              <p class="go-title">School Activities</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="events" id="gitem-11">
+          <img src="20241126_111857.jpg" alt="School event" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">🎉 Event</span>
+              <p class="go-title">School Celebration</p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="culture" id="gitem-12">
+          <img src="20260212_125101.jpg" alt="Cultural celebration" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="go-content">
+              <span class="go-tag">🎭 Culture</span>
+              <p class="go-title">Cultural Celebration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lightbox-bg" id="lightbox-bg"></div>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img" />
+      <div class="lightbox-info">
+        <span class="lightbox-tag" id="lightbox-tag"></span>
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== TIMELINE SECTION ===== -->
+  <section class="timeline-section section" id="timeline">
+    <div class="container">
+      <div class="section-header animate-up">
+        <div class="section-eyebrow">Our Journey</div>
+        <h2 class="section-title">Six Decades of <em>Excellence</em></h2>
+        <div class="title-underline"></div>
+        <p class="section-desc">From humble beginnings to a thriving centre of learning — our story is one of passion, community, and endless dedication.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item tl-left animate-left">
+          <div class="tl-content">
+            <div class="tl-year">1963</div>
+            <h3>School Founded</h3>
+            <p>Adarsh Vidya Mandir established under Nutan Vidya Vikas Mandal, beginning its mission to bring quality education to the children of Kelve.</p>
+          </div>
+          <div class="tl-dot"><span>🌱</span></div>
+          <div class="tl-spacer"></div>
+        </div>
+        <div class="timeline-item tl-right animate-right">
+          <div class="tl-spacer"></div>
+          <div class="tl-dot"><span>🏫</span></div>
+          <div class="tl-content">
+            <div class="tl-year">1980s</div>
+            <h3>Growing Community</h3>
+            <p>The school's reputation grew across Palghar district as enrolment surged and new classrooms were built to welcome more eager young learners.</p>
+          </div>
+        </div>
+        <div class="timeline-item tl-left animate-left">
+          <div class="tl-content">
+            <div class="tl-year">2000s</div>
+            <h3>Cultural Recognition</h3>
+            <p>Students began winning district and state-level competitions in arts, sports, and academics — putting AVM firmly on the map of excellence.</p>
+          </div>
+          <div class="tl-dot"><span>🏆</span></div>
+          <div class="tl-spacer"></div>
+        </div>
+        <div class="timeline-item tl-right animate-right">
+          <div class="tl-spacer"></div>
+          <div class="tl-dot"><span>📱</span></div>
+          <div class="tl-content">
+            <div class="tl-year">2015+</div>
+            <h3>Digital Transformation</h3>
+            <p>Smart interactive boards introduced in classrooms, bringing digital learning and 21st-century education tools to our students.</p>
+          </div>
+        </div>
+        <div class="timeline-item tl-left animate-left">
+          <div class="tl-content">
+            <div class="tl-year">Today</div>
+            <h3>Bright Future Ahead</h3>
+            <p>With 500+ students, 25+ dedicated teachers, and a tradition of excellence, AVM continues to shine brighter than ever — lighting the path ahead.</p>
+          </div>
+          <div class="tl-dot"><span>✨</span></div>
+          <div class="tl-spacer"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUOTE STRIP ===== -->
+  <div class="quote-strip">
+    <div class="qs-inner">
+      <div class="qs-quote-mark">"</div>
+      <blockquote>
+        तमसो मा ज्योतिर्गमय — Lead us from Darkness to Light
+      </blockquote>
+      <cite>— School Motto, Adarsh Vidya Mandir</cite>
+    </div>
+    <div class="qs-bg-img" style="background-image: url('20241207_102032.jpg')"></div>
+  </div>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="section-header animate-up">
+        <div class="section-eyebrow">Get In Touch</div>
+        <h2 class="section-title">We'd Love to <em>Hear From You</em></h2>
+        <div class="title-underline"></div>
+        <p class="section-desc">Whether you're a parent, student, or community member — our doors are always open.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-cards animate-left">
+          <div class="contact-card cc-1" id="contact-address">
+            <div class="cc-icon-wrap"><span>📍</span></div>
+            <div>
+              <h3>Our Address</h3>
+              <p>Adarsh Vidya Mandir<br/>
+              (Apurva Alaka Jayesh Chaudhari Prathamik Vidyalay)<br/>
+              Mu. Po. Kelve, Ta. Palghar<br/>
+              Dist. Palghar, Maharashtra — 401 401</p>
+            </div>
+          </div>
+          <div class="contact-card cc-2" id="contact-trust">
+            <div class="cc-icon-wrap"><span>🏛️</span></div>
+            <div>
+              <h3>Managing Trust</h3>
+              <p>Nutan Vidya Vikas Mandal<br/>(नूतन विद्या विकास मंडळ)<br/>Palghar, Maharashtra</p>
+            </div>
+          </div>
+          <div class="contact-card cc-3" id="contact-motto">
+            <div class="cc-icon-wrap"><span>⭐</span></div>
+            <div>
+              <h3>School Motto</h3>
+              <p><strong>तमसो मा ज्योतिर्गमय</strong><br/><em>"Lead us from Darkness to Light"</em></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map-col animate-right">
+          <div class="map-card" id="map-area">
+            <div class="map-photo" style="background-image: url('20240207_125226.jpg')"></div>
+            <div class="map-overlay">
+              <div class="map-pin-pulse">
+                <div class="map-pin-ring"></div>
+                <span>📍</span>
+              </div>
+              <div class="map-info">
+                <h3>Kelve, Palghar</h3>
+                <p>Maharashtra, India — 401 401</p>
+              </div>
+              <a href="https://maps.app.goo.gl/BwZFo1hicu3ccZkx9" target="_blank" rel="noopener" class="btn btn-primary" id="map-link-btn">
+                Open in Google Maps
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-glow"></div>
+    <div class="footer-content">
+      <div class="footer-brand-col">
+        <div class="footer-brand">
+          <img src="logo.jpg" alt="Logo" class="footer-logo" />
+          <div>
+            <div class="footer-name">आदर्श विद्या मंदिर</div>
+            <div class="footer-sub">Adarsh Vidya Mandir, Kelve</div>
+          </div>
+        </div>
+        <p class="footer-tagline">Lighting young minds since 1963, one curious child at a time.</p>
+        <div class="footer-motto-badge">✨ तमसो मा ज्योतिर्गमय ✨</div>
+      </div>
+      <div class="footer-links-col">
+        <h4>Quick Links</h4>
+        <nav class="footer-nav">
+          <a href="#home" id="footer-home">Home</a>
+          <a href="#about" id="footer-about">About Us</a>
+          <a href="#features" id="footer-features">Why Us</a>
+          <a href="#gallery" id="footer-gallery">Gallery</a>
+          <a href="#timeline" id="footer-timeline">Our Journey</a>
+          <a href="#contact" id="footer-contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-info-col">
+        <h4>School Info</h4>
+        <div class="footer-info-item"><span>📍</span><p>Kelve, Ta. Palghar, Dist. Palghar, MH — 401 401</p></div>
+        <div class="footer-info-item"><span>🏛️</span><p>Nutan Vidya Vikas Mandal</p></div>
+        <div class="footer-info-item"><span>📅</span><p>Established 1963</p></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Adarsh Vidya Mandir, Kelve. All rights reserved.</p>
+      <p>Made with ❤️ for our wonderful students &amp; community.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
